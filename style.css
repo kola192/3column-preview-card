@@ -81,3 +81,38 @@ body {
   background: transparent;
   color: var(--light-gray);
 }
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  padding: 1.5rem;
+  background: hsla(0, 4%, 86%, 0.75);
+}
+
+.attribution a {
+  color: var(--very-dark-cyan);
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    padding-top: 5rem;
+  }
+
+  .container {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .card-sedan {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card-luxury {
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 5rem;
+  }
+
+  .attribution {
+    font-size: 11px;
+  }
+}
