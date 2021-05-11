@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  --trans-white: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  overflow-x: hidden;
+  background: var(--light-gray);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  padding: 3rem;
+  color: var(--light-gray);
+}
+
+.card-sedan {
+  background: var(--bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+
+.card-suv {
+  background: var(--dark-cyan);
+}
+
+.card-luxury {
+  background: var(--very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+
+.image {
+  width: 60px;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  font-family: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.text {
+  line-height: 1.7;
+  margin-bottom: 5rem;
+  color: var(--trans-white);
+}
+
+.link {
+  text-decoration: none;
+  color: #333;
+  background: var(--light-gray);
+  padding: 12px 20px;
+  border: 2px solid var(--light-gray);
+  border-radius: 30px;
+  transition: all 0.35s ease;
+}
+
+.link:hover {
+  background: transparent;
+  color: var(--light-gray);
+}
